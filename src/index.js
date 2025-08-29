@@ -1,5 +1,5 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/";
@@ -9,11 +9,13 @@ import Error from "./components/Error";
 import Results from "./pages/Results";
 import Freelances from "./pages/Freelances";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+// 1. Créer la racine de l'application.
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
 
+// 2. Render l'application avec Router et les Routes.
 root.render(
-  <StrictMode>
+  <React.StrictMode>
     <Router>
       <Header />
       <Routes>
@@ -24,5 +26,5 @@ root.render(
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
-  </StrictMode>
+  </React.StrictMode>
 );
