@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/shiny-agency-web-site/static/js/main.1070000c.js",
-    "static/media/404.svg": "/shiny-agency-web-site/static/media/404.fc9ddee48547c71d5534244cfc2a911c.svg",
-    "static/media/home-illustration.svg": "/shiny-agency-web-site/static/media/home-illustration.3c3e6fa7e38c96aae00aea10c3cbf9cd.svg",
-    "index.html": "/shiny-agency-web-site/index.html",
-    "main.1070000c.js.map": "/shiny-agency-web-site/static/js/main.1070000c.js.map"
+    "main.js": "./static/js/main.e2284f5a.js",
+    "static/media/404.svg": "./static/media/404.fc9ddee48547c71d5534244cfc2a911c.svg",
+    "static/media/home-illustration.svg": "./static/media/home-illustration.3c3e6fa7e38c96aae00aea10c3cbf9cd.svg",
+    "index.html": "./index.html",
+    "main.e2284f5a.js.map": "./static/js/main.e2284f5a.js.map"
   },
   "entrypoints": [
-    "static/js/main.1070000c.js"
+    "static/js/main.e2284f5a.js"
   ]
 }
