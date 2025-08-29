@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
+import DefaultPicture from '../../assets/profile.png'
 
-function Card({ label, title, picture }) {
+function Card({ label, title, picture = DefaultPicture }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", padding: 15 }}>
       <span>{label}</span>
@@ -11,9 +12,11 @@ function Card({ label, title, picture }) {
 }
 
 Card.propTypes = {
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  picture: PropTypes.string,
-};
+  picture: PropTypes.string.isRequired,
+}
+
+
 
 export default Card;
