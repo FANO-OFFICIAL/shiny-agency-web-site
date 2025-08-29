@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/";
 import Survey from "./pages/Survey/";
@@ -16,7 +16,9 @@ const root = ReactDOM.createRoot(container);
 // 2. Render l'application avec Router et les Routes.
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+    >
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,6 +27,6 @@ root.render(
         <Route path="/freelances" element={<Freelances />} />
         <Route path="*" element={<Error />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
 );
