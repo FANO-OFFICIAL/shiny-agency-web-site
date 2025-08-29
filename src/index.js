@@ -17,8 +17,12 @@ const root = ReactDOM.createRoot(container);
 
 // Création du style global
 const GlobalStyle = createGlobalStyle`
-    div {
-        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    * {
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
     }
 `;
 
